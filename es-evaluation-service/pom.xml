@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.wechange</groupId>
-	<artifactId>es-student-service</artifactId>
+	<artifactId>es-evaluation-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>es-evaluation-service</name>
 	<description>microservice de gestion des Eleves</description>
