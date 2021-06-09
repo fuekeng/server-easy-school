@@ -1,0 +1,77 @@
+logging:
+  level:
+    # ROOT: DEBUG
+    com.wechange.easyschool.esclasseservice: DEBUG
+server:
+  port: 9007
+  servlet:
+    context-path: /api
+spring:
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+  devtools:
+    restart:
+      enabled: true
+  data:
+    mongodb:
+#      authentication-database: admin
+#      username: root
+#      password: root 
+      database: easyschool
+      port: 27017
+      host: localhost
+      
+ # datasource:
+  #  url: jdbc:mysql://localhost:3306/easyschool?useUnicode=true
+   #   &useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&
+    #  serverTimezone=UTC
+    #username: root
+    #password: easyschool
+#  jpa:
+#    generate-ddl: true
+#    hibernate:
+#     use-new-id-generator-mappings: false
+#      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: tallykeepers@gmail.com  #Replace this field with your Gmail username.
+    password: 2019Tallykeeper          #Replace this field with your Gmail password/App password.
+    protocol: smtp
+    tls: true
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
+      ssl.trust: smtp.gmail.com
+  messages:
+    cache-duration: PT1S # 1 second, see the ISO 8601 standard
+    thymeleaf:
+      cache: false
+    sleuth:
+      sampler:
+        probability: 1 # report 100% of traces
+
+eureka:
+ client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:9102/eureka
+
+app:
+  security:
+    jwt:
+      loginUrl: /login
+      header: Authorization
+      prefix: Bearer
+      # accessToken expire in 24h,
+      expiration: 86400000
+      refresh:
+        expiration: 8640000000000 #  refreshToken never expire 100 000 days
+      secret: 0A7A690F19001C887DEB108AE40C54717E740385243437A863569C91BF8AC99B
+
+clientApp:
+  baseUrl : easychool.com

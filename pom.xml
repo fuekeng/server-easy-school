@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.wechange</groupId>
+    <artifactId>easyschool</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <modules>
+		<module>es-auth-service</module>     
+		<module>es-common</module>
+		<module>es-courses-service</module>
+		<module>es-student-service</module>
+		<module>es-evaluation-service</module>
+        <module>es-eureka-server</module>
+        <module>es-zuul-gateway</module>
+		<module>es-classe-service</module>
+
+    </modules>
+
+</project>
