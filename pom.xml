@@ -11,13 +11,13 @@
     <modules>
 		<module>es-auth-service</module>     
 		<module>es-common</module>
+		<module>es-model</module>
 		<module>es-courses-service</module>
 		<module>es-student-service</module>
 		<module>es-evaluation-service</module>
         <module>es-eureka-server</module>
         <module>es-zuul-gateway</module>
 		<module>es-classe-service</module>
-
     </modules>
 
 </project>
